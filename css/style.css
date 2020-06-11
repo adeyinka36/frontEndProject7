@@ -1,0 +1,720 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+body{
+    font-family: 'Heebo', sans-serif;
+    height:auto;
+    
+}
+
+.container{
+    width:100vw;
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+   
+    
+    
+}
+.top{
+    
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-column: 1/3;
+    background-color:lightskyblue
+}
+.right{
+    width: 92vw;
+    height: 100%;
+    
+   
+
+}
+
+.profilePicDiv{
+
+    display: flex;
+    width:100%;
+    height: 100%;
+    justify-content:center;
+    align-items: center;
+   
+   
+
+    
+}
+
+.name{
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    align-self:  center;
+    margin-right: 1rem;
+    
+
+    
+}
+
+img{
+    display:inline-block block;
+    width:2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    
+}
+.profPic{
+    margin-right: 1%;
+    
+}
+
+.profSvg{
+    position: relative;
+    margin-top: .5rem;
+    margin-right: 1rem;
+    margin-left: auto;
+    transition:transform 1s;
+}
+
+.profSvg:hover{
+ transform:scale(1.2);
+
+}
+.app-name{
+   
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .5rem;
+    display: flex;
+    align-items: center;
+    margin-left: .7rem;
+}
+
+
+/* styling left div */
+.left{
+    background-color: darkmagenta;
+    display:flex;
+    flex-direction: column;
+    align-items:  center;
+    height: 232%;
+    
+}
+
+.left img{
+    border-radius: 0;
+    margin-top: 1.5rem;
+}
+
+
+
+
+
+/* style right div */
+.main-top{
+    height:20vh;
+}
+.searchBox{
+    height: 8vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    
+
+}
+
+.dashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    letter-spacing: .3rem;
+
+}
+
+.search{
+    display: flex;
+    justify-content:start;
+    border-left:.2px solid lightgreen;
+    border-bottom:.2px solid lightgray;
+    padding-top: .2rem;
+    
+}
+.search input{
+    margin-left:50%;
+    width:50vw;
+    margin-right: 1rem;
+    border-radius:.3rem;
+    height: 90%;
+    
+}
+
+.alert{
+    width: 90%;
+    background-color:lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:1rem auto;
+    height: 3rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .05rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.cancel-alert{
+  height: 100%;
+ 
+
+  font-weight: bold;
+  font-size: 1.5rem;
+   
+
+}
+.cancel-alert:hover{
+    cursor: pointer;
+}
+.canvasDiv{
+    width:92vw;
+    padding-bottom:2rem;
+    
+}
+
+
+.canvasTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.canvasTitle span{
+    margin-left: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul{
+    
+    display: inline-block;
+    width: auto;
+}
+li{
+    text-decoration: none;
+    margin-right: 1rem;
+    list-style: none;
+    display: inline-block;
+    width:auto;
+    border-radius: 20%;
+    padding:.5rem;
+    
+}
+    
+
+li:hover{
+    cursor: pointer;
+}
+
+li:active{
+    background-color:lightgreen;
+}
+
+
+
+.barChartDiv,.roundChartDiv{
+    width:50%;
+    
+}
+
+.smallCharts{
+    display: flex;
+    height: auto;
+
+}
+h3{
+    padding:1rem;
+    border-top: 1px solid lightgray;
+}
+.roundChartDiv{
+    border-left: 1px solid lightgray;
+    text-align: center;
+}
+#myChartPie,#myChartbar{
+    height:300px;
+}
+
+.mobile-header{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.SVG{
+    
+    height: auto;
+    background-color:blue;
+    
+    height:3rem;
+    width: 2rem;
+    
+}
+.socialsSvg{
+     display: flex;
+    justify-content: space-around;
+    width: 100%;  
+    border-bottom:1px solid lightblue;
+    padding-bottom:3rem;
+}
+
+.outer-span{
+    display: inline-block;
+    width: 27%;
+    height: 10rem;
+    text-align: center;
+    padding-top:2rem;
+    font-size: 1.5rem;
+    border: 1px solid lightblue;
+}
+.inner-span{
+    display: inline-block;
+    padding:1rem;
+    
+    border:solid blue;
+    border-radius: 50%;
+    background-color: blue;
+
+
+}
+.leftspan,.rightspan{
+    padding-top: 2rem;
+    padding-left: 1.2rem;
+}
+
+.midspan{
+    padding-top: 1.5rem;
+    padding-left: .75rem;
+}
+.inner-span{
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+.leftspan,.rightspan{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.twitter{
+font-size: 1rem;
+font-weight: bold;
+color: blue;
+display: flex;
+justify-content: flex-start;
+}
+.num{
+    font-size: 2.5rem;
+    color: black;
+    padding:0;
+}
+.images{
+    display: inline-block;
+   padding: 1rem;
+   fill:white;
+   
+    
+ 
+}
+.text{
+    display:inline-block;
+    margin-left: 1rem;
+    padding:0;
+}
+.facebook{
+  
+    top:51.6rem;
+    left:27.3rem;
+
+}
+
+
+
+.members{
+    width:100%;
+    height:50vh;
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+    
+    
+}
+.act-mems{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.members p{
+    display: inline-block;
+    width: auto;
+}
+.member-details{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    
+    
+    
+}
+.member-details:hover{
+    cursor: pointer;
+    background-color: lightgreen;
+}
+.member-details p{
+    display: inline-block;
+    width: auto;
+    
+}
+
+.name-email{
+   display: flex;
+   flex-direction: column;
+}
+.date{
+    margin-left: auto;
+    margin-right:1rem;
+}
+
+.member-details img{
+    margin-right:1rem;
+    margin-left: 1rem;
+}
+
+.mem-rec{
+    margin-top:2rem;
+    margin-left:2rem;
+    margin-bottom: 1rem;
+}
+
+.right-mems{
+    border-right:1px solid lightblue;
+}
+ 
+
+
+.last-div{
+    display:flex;
+    height:50%;
+    
+   
+}
+.last-left,.last-right{
+    width:50%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-top: none;
+  
+}
+
+.last-left{
+    border-right:1px solid lightblue;
+
+}
+form{
+    display:flex;
+    flex-direction:column;
+    
+ 
+}
+
+input{
+    margin-bottom:1.5rem;
+    height:3rem;
+    border-radius: 5px;
+}
+
+textarea{
+    border-radius: 5px;
+    height:7rem;
+    margin-bottom: 2rem;
+}
+
+button{
+    height:2rem;
+}
+
+
+
+.send-notif{
+    width: 100%;
+    display: flex;
+margin-bottom: 1.7rem;
+justify-content: space-between;
+align-items: center;
+}
+
+.fa{
+  font-size: 3rem;
+}
+
+.send-notif p{
+    margin-right: 3rem;
+}
+
+select{
+    display: block;
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.last-right button{
+     width: 49.5%;
+
+}
+.last-left{
+    position:relative;
+}
+
+button{
+    background-color: blueviolet;
+    height: 3rem;
+    border-radius: 5px;
+    box-shadow: none;
+    font-weight: bold;
+}
+
+.cancel{
+    background-color: lightgrey;
+}
+.user-email{
+    color: purple;
+}
+.members{
+    border-bottom: 1px solid lightblue;
+}
+h4{
+    margin-top: 1rem;
+    margin-bottom:1rem;
+}
+.send-notif span{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.toggleDiv i{
+    margin-right: 1rem;
+   
+}
+.toggleDiv {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#house{
+    position:absolute ;
+    height: auto;
+    top:6.5rem;
+}
+.last-left{
+    position:relative;
+}
+.searchRes{
+    padding:1rem;
+    font-size: 1rem;
+    background-color:white;
+    border: 1px solid black;
+    
+}
+.searchRes:hover{
+ background-color: lightgray;
+ cursor: pointer;
+}
+
+.top{
+    width:99vw;
+}
+#myChart{
+    max-width: 90vw;
+}
+.smallCharts{
+    width: 90vw;
+}
+select{
+    width: 99%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+
+/* media queries */
+
+@media(max-width:1050px){
+    .num{
+        font-size:1rem ;
+    }
+    
+}
+
+
+@media(max-width:931px){
+    .last-right button{
+        width:100%;
+    }
+    
+}
+
+
+
+@media(max-width:850px){
+   
+ 
+  .container{
+      width: 100vw;
+  }
+  .right{
+      width: auto;
+  }
+    .smallCharts{
+        width: 92vw;
+        display:flex;
+        flex-direction: column;
+    }
+    .barChartDiv,.roundChartDiv{
+        width:86vw;
+    }
+    #myChartBar,#myChartPie{
+        width:86vw
+    }
+
+    .socialsSvg{
+        width: 92vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-between;
+    }
+    .outer-span{
+        width:100%;
+    }
+
+    .members{
+        width:92vw;
+        display: flex;
+        flex-direction: column;
+        height:auto;
+    }
+    .act-mems{
+        width: 100%;
+    }
+    .right-mems{
+        border-right: none;
+    }
+    .last-div{
+        flex-direction: column;
+    }
+    .last-right{
+        width: 92vw;
+    }
+    .last-left{
+        width:92vw;
+        border-right: none;
+    }
+    .left{
+        height: 350%;
+    }
+    .right{
+        width: 92vw;
+    }
+    .top{
+        width: 97vw;
+    }
+    .search input{
+        margin-left: 7rem;
+    }
+    .canvasTitle{
+        width: 90vw;
+    }
+    #myChart{
+        max-width: 85vw;
+    }
+    .members{
+        width:88vw;
+    }
+    .app-name{
+        font-size: 1.5rem;
+    }
+    .left{
+        height:233% ;
+    }
+}
+
+
+@media(max-width:320px){
+    .right{
+        width: 90vw;
+        
+    }
+    .left{
+       width: 10vw;
+    }
+    
+    .search input{
+       margin-left:1rem;
+    }
+    .body{
+        width:100vw;
+    }
+    .left{
+        width:10vw;
+    }
+    .right{
+        width:85vw;
+    }
+   .left img{
+       width: 1.5rem;
+       height: 1.5rem;
+   }
+   .socialsSvg{
+       width:85vw;
+   }
+   .members{
+       width: 80vw;
+   }
+   .member-details{
+       display: flex;
+       flex-direction: column;
+   }
+   .main-top{
+       height: auto;
+       font-size: .5rem;
+   }
+   .canvasTitle li{
+       font-size: .5rem;
+   }
+   .canvasTitle span{
+       font-size: 1rem;
+   }
+   .canvasTitle li{
+       margin-right:0;
+   }
+   .canvasTitle{
+       margin-top: 1rem;
+   }
+   #myChart{
+       max-width:88vw;
+   }
+   .top{
+       width: 105vw;
+   }
+   .profilePicDiv span{
+     font-size: .5rem;
+   }
+   .left{
+       height:400%
+   }
+}

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Analtics</title>
+        <link rel="stylesheet" href="css/newstyles.css">
+        <meta name="veiwport" content="width=device-width scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Oswald:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body id="body">
+        <div class="container" id="dashboard">
+            <div class="top">
+              <span class="app-name">Analytics</span>
+              <!-- <svg src="icons/icon-bell.svg"></svg> -->
+              
+              <div class="profilePicDiv">
+                 <img src="icons/icon-bell.svg" class="profSvg"/>
+                <img src="images/member-1.jpg" class="profPic">
+                <span class="name">
+                    John Smith
+                </span>
+                </div>
+             
+            </div>
+            <div class="left">
+                <a href="#dashboard"><img src="icons/icon-dashboard.svg"></a>
+                <a href="#members"><img src="icons/icon-members.svg"></a>
+                <a href="#visits"><img src="icons/icon-visits.svg"></a>
+                <a href="#settings"><img src="icons/icon-settings.svg"></a>
+
+            </div>
+            <div class="right">
+               <div class="main-top">
+                 <div class="searchBox">
+                   <span class="dashboard">Dashboard</span>
+                   <span class="search"><input type="search" placeholder="search" id="searchInput"></span>
+                </div>
+                   <div class="alert">
+                       <span class="alert-message">Alert Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, repellendus?</span>
+                       <span class="cancel-alert">x</span>
+                   </div>
+                   
+               </div>
+                  <div class="canvasTitle">
+                      <span>Traffic</span>
+                      <ul>
+                          <li id="hourly" class="periods">Hourly</li>
+                          <li id="daily" class="periods">Daily</li>
+                          <li id="weekly" class="periods">Weekly</li>
+                          <li id="Monthly" class="periods">Monthly</li>
+                      </ul>
+                    </div>
+               <div class="canvasDiv"><canvas id="myChart" width="750" height="300"></canvas></div>
+               <div class="smallCharts" id="visits">
+               <div class="barChartDiv">
+               <h3>Daily Traffic</h3>
+               <canvas id="myChartBar" ></canvas>
+               </div>
+               <div class="roundChartDiv">
+                <h3 class="mobile-header">Mobile Users</h3>
+               <canvas id="myChartPie" ></canvas>
+               </div>
+               </div>
+               <h3 class="mobile-header">SOCIAL STATS</h3>
+               <div class="socialsSvg">
+                  
+                  
+                    <span class="outer-span">
+                        
+                    <span class="inner-span leftspan">
+                    <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve" class="SVG">
+                    <path fill="red" class="images" d="M32,3.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6C25.8,0.8,24,0,22.2,0
+                        c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5C10.3,7.8,5.5,5.2,2.2,1.2c-0.6,1-0.9,2.1-0.9,3.3c0,2.3,1.2,4.3,2.9,5.5
+                        c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1
+                        c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,3,10.1,3c12.1,0,18.7-10,18.7-18.7
+                        c0-0.3,0-0.6,0-0.8C30,5.6,31.1,4.4,32,3.1z"/>
+                    </svg>
+                    </span>
+                        <div class="text">
+                            <p class="twitter">Twitter</p>
+                            <p class="num">10,400</p>
+                        </div>
+                    </span>
+                    
+                    <span class="outer-span facebook">
+                    <span class="inner-span midspan">
+                    <svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="green" class="images" d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z" class="SVG"/></svg>
+                    </span>
+                        <div class="text">
+                            <p class="twitter">Faceook</p>
+                            <p class="num">15,500</p>
+                        </div>
+                    </span>
+
+                    <span class="outer-span">
+                    <span class="inner-span rightspan">
+                    <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve" class="SVG">
+                    <path fill="blue" class="images" d="M17.7,25.7c0-0.3,0-0.5-0.1-0.8c-0.1-0.2-0.1-0.5-0.2-0.7c-0.1-0.2-0.2-0.4-0.3-0.7c-0.2-0.2-0.3-0.4-0.4-0.6
+                    c-0.1-0.2-0.3-0.3-0.5-0.6c-0.2-0.2-0.4-0.4-0.5-0.5c-0.1-0.1-0.3-0.3-0.6-0.5c-0.3-0.2-0.5-0.4-0.6-0.4s-0.3-0.2-0.6-0.4
+                    c-0.3-0.2-0.5-0.4-0.6-0.4c-0.2,0-0.5,0-1,0c-0.7,0-1.4,0-2,0.1c-0.7,0.1-1.4,0.2-2.1,0.5c-0.7,0.2-1.3,0.5-1.9,0.9s-1,0.8-1.3,1.4
+                    c-0.3,0.6-0.5,1.3-0.5,2.1c0,0.9,0.2,1.7,0.7,2.3c0.5,0.7,1.1,1.2,1.8,1.6s1.5,0.7,2.3,0.9s1.6,0.3,2.4,0.3c0.8,0,1.5-0.1,2.2-0.2
+                    c0.7-0.2,1.3-0.4,1.9-0.8c0.6-0.3,1.1-0.8,1.4-1.4C17.5,27.2,17.7,26.5,17.7,25.7z M15.4,9.1c0-0.8-0.1-1.6-0.3-2.5
+                    c-0.2-0.9-0.5-1.7-0.9-2.5c-0.4-0.8-0.9-1.5-1.6-2c-0.7-0.5-1.5-0.8-2.3-0.8c-1.2,0-2.1,0.4-2.8,1.3c-0.7,0.9-1,1.9-1,3.2
+                    c0,0.6,0.1,1.2,0.2,1.9c0.1,0.7,0.4,1.3,0.7,2c0.3,0.7,0.7,1.3,1.1,1.8c0.4,0.5,0.9,1,1.5,1.3c0.6,0.3,1.2,0.5,1.9,0.5
+                    c1.2,0,2.1-0.4,2.7-1.2C15.1,11.4,15.4,10.4,15.4,9.1z M12.9,0h8.4l-2.6,1.5h-2.6c0.9,0.6,1.6,1.4,2.1,2.4s0.8,2.1,0.8,3.2
+                    c0,0.9-0.1,1.8-0.4,2.5c-0.3,0.7-0.7,1.3-1.1,1.8c-0.4,0.4-0.8,0.9-1.3,1.2c-0.4,0.4-0.8,0.8-1.1,1.2c-0.3,0.4-0.4,0.8-0.4,1.3
+                    c0,0.3,0.1,0.7,0.3,1c0.2,0.3,0.5,0.6,0.8,0.9c0.3,0.3,0.7,0.6,1.1,0.9c0.4,0.3,0.8,0.7,1.2,1.1c0.4,0.4,0.8,0.8,1.1,1.3
+                    c0.3,0.5,0.6,1,0.8,1.6c0.2,0.6,0.3,1.3,0.3,2c0,2.1-0.9,3.9-2.7,5.4c-1.9,1.7-4.6,2.5-8.1,2.5c-0.8,0-1.5-0.1-2.3-0.2
+                    c-0.8-0.1-1.6-0.3-2.3-0.6c-0.8-0.3-1.5-0.7-2.1-1.1c-0.6-0.4-1.1-1-1.5-1.7C1,27.6,0.8,26.9,0.8,26c0-0.8,0.2-1.6,0.7-2.6
+                    c0.4-0.8,1-1.5,1.8-2.1c0.8-0.6,1.8-1.1,2.8-1.4c1-0.3,2-0.5,3-0.7c0.9-0.1,1.9-0.2,2.9-0.3c-0.8-1.1-1.2-2-1.2-2.9
+                    c0-0.2,0-0.3,0-0.5c0-0.1,0.1-0.3,0.1-0.4c0-0.1,0.1-0.2,0.2-0.4c0.1-0.2,0.1-0.3,0.1-0.4c-0.5,0.1-1,0.1-1.3,0.1
+                    c-1.9,0-3.5-0.6-4.9-1.9c-1.4-1.3-2-2.8-2-4.7c0-1.8,0.6-3.4,1.8-4.8C6,1.7,7.5,0.8,9.3,0.4C10.5,0.1,11.7,0,12.9,0z M32.8,4.9v2.5
+                    h-4.9v4.9h-2.5V7.4h-4.9V4.9h4.9V0h2.5v4.9H32.8z"/>
+                    </svg>
+                    </span>
+                        <div class="text">
+                            <p class="twitter">Google</p>
+                            <p class="num">12,400</p>
+                        </div>
+                    </span>
+
+
+               </div>
+               <div class="members" id="members">
+                
+                     <div class="act-mems right-mems">
+                         <div class="mem-rec">NEW MEMBERS</div>
+                         
+                         <div class="member-details mememail">
+                            <img src="images/member-1.jpg">
+                            <div class="name-email">
+                            <p class="personName">Victoria Chambers</p>
+                            <p class="user-email">vic.chambers@example.com</p>
+                            </div>
+                            <p class="date">10/15/15</p>
+                        </div>
+                        
+                        <div class="member-details mememail">
+                            <img src="images/member-2.jpg" >
+                            <div class="name-email">
+                            <p class="personName"> Dale Byrd</p>
+                            <p class="user-email">dale.byrd52@example.com</p>
+                            </div>
+                            <p class="date">10/15/15</p>
+                        </div >
+                        
+                        <div class="member-details mememail">
+                            <img src="images/member-3.jpg">
+                            <div class="name-email">
+                            <p class="personName">Dawn Wood</p>
+                            <p class="user-email">dawn.wood16@example.com</p>
+                            </div>
+                            <p class="date">10/15/15</p>
+                        </div>
+                       
+                        
+                        <div class="member-details  mememail mem4">
+                            <img src="images/member-4.jpg">
+                            <div class="name-email">
+                            <p class="personName">Dan Oliver</p>
+                            <p class="user-email">Dan.oliver82@example.com</p>
+                            </div>
+                            <p class="date">10/15/15</p>
+                        </div>
+                       
+                        
+                           
+                       
+                       
+                        
+                 </div>
+                 
+                     <div class="act-mems" id="settings">
+                         <div class="mem-rec">RECENT ACTIVITY</div>
+                         
+                            <div class="member-details">
+                                <img src="images/member-1.jpg">
+                                <div class="name-email">
+                                <p>Victoria Chambers liked alex's post</p>
+                                <p>4 hours ago</p>
+                                </div>
+                                <p class="date"><i class="fas fa-chevron-right"></i></p>
+                            </div>
+                           
+                            
+                            <div class="member-details">
+                                <img src="images/member-2.jpg">
+                                <div class="name-email">
+                                <p>Dale Byrd liked victorias post</p>
+                                <p>2 hours ago</p>
+                                </div>
+                                <p class="date"><i class="fas fa-chevron-right"></i></p>
+                            </div>
+                           
+                            
+                            <div class="member-details">
+                                <img src="images/member-3.jpg">
+                                <div class="name-email">
+                                <p>Dan Wood commented </p>
+                                <p>1 hour ago</p>
+                                </div>
+                                <p class="date"><i class="fas fa-chevron-right"></i></p>
+                            </div>
+                           
+                            
+                            <div class="member-details mem4">
+                                <img src="images/member-4.jpg">
+                                <div class="name-email">
+                                <p>Dan Oliver is now friedns with Mike</p>
+                                <p>30 mins ago</p>
+                                </div>
+                                <p class="date"><i class="fas fa-chevron-right"></i></p>
+                            </div>
+                           
+                        
+                         
+                 </div>
+               </div>
+            <div class="last-div">
+               <div class="last-left">
+                  <h4>MESSAGE USER</h4>
+                  <form>
+                      <input type="text" placeholder="Search for User" id="user-search">
+                
+                      <textarea placeholder="Message for User" id="user-search-textarea"></textarea>
+                      <button type="submit" id="user-search-button">SEND</button>
+                  </form>
+               </div>
+               <div class="last-right">
+                   <h4>SETTINGS</h4>
+                   <div class="send-notif">
+                       <p>Email Notification</p>
+                       <span class="toggleDiv">
+                       <i class="fa fa-toggle-on toggle"id="toggleNot" ></i>
+                       <P id="sendEmail">ON</P>
+                       </span>
+                   </div>
+                   <div class="send-notif">
+                       <p>Public Profile</p>
+                       <span class="toggleDiv">
+                       <i class="fa fa-toggle-on toggle" id="togglePub"></i>
+                       <p id="profPub">ON</p>
+                       </span>
+                   </div>
+                   <select >
+                   <option value=""">Select Timezone</option>
+                   <option value="Etc/GMT+12">(GMT-12:00) International Date Line West</option>
+                    <option value="Pacific/Midway">(GMT-11:00) Midway Island, Samoa</option>
+                    <option value="Pacific/Honolulu">(GMT-10:00) Hawaii</option>
+                    <option value="US/Alaska">(GMT-09:00) Alaska</option>
+                    <option value="America/Los_Angeles">(GMT-08:00) Pacific Time (US & Canada)</option>
+                    <option value="America/Tijuana">(GMT-08:00) Tijuana, Baja California</option>
+                    <option value="US/Arizona">(GMT-07:00) Arizona</option>
+                    <option value="America/Chihuahua">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
+                    <option value="US/Mountain">(GMT-07:00) Mountain Time (US & Canada)</option>
+                    <option value="America/Managua">(GMT-06:00) Central America</option>
+                    <option value="US/Central">(GMT-06:00) Central Time (US & Canada)</option>
+                    <option value="America/Mexico_City">(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
+                    <option value="Canada/Saskatchewan">(GMT-06:00) Saskatchewan</option>
+                    <option value="America/Bogota">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
+                    <option value="US/Eastern">(GMT-05:00) Eastern Time (US & Canada)</option>
+                    <option value="US/East-Indiana">(GMT-05:00) Indiana (East)</option>
+                    <option value="Canada/Atlantic">(GMT-04:00) Atlantic Time (Canada)</option>
+                    <option value="America/Caracas">(GMT-04:00) Caracas, La Paz</option>
+                    <option value="America/Manaus">(GMT-04:00) Manaus</option>
+                    <option value="America/Santiago">(GMT-04:00) Santiago</option>
+                    <option value="Canada/Newfoundland">(GMT-03:30) Newfoundland</option>
+                    <option value="America/Sao_Paulo">(GMT-03:00) Brasilia</option>
+                    <option value="America/Argentina/Buenos_Aires">(GMT-03:00) Buenos Aires, Georgetown</option>
+                    <option value="America/Godthab">(GMT-03:00) Greenland</option>
+                    <option value="America/Montevideo">(GMT-03:00) Montevideo</option>
+                    <option value="America/Noronha">(GMT-02:00) Mid-Atlantic</option>
+                    <option value="Atlantic/Cape_Verde">(GMT-01:00) Cape Verde Is.</option>
+                    <option value="Atlantic/Azores">(GMT-01:00) Azores</option>
+                   </select>
+                   <button  class="save">SAVE</button>
+                   <button class="cancel">CANCEL</button>
+
+               </div>
+            </div>
+            </div>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+        <script src="https://kit.fontawesome.com/b9189aabce.js" crossorigin="anonymous"></script>
+        <script src="javascript/func.js"></script>
+    </body>
+</html>
