@@ -1453,7 +1453,7 @@ body{
     width: 107vw;
     height: 120vh;
     z-index: 10;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .8);
     display: flex;
 justify-content: center;
 align-items: center;
@@ -1467,8 +1467,8 @@ z-index: 10;
     width: auto;
     text-align: center;
     height: 2rem;
-    font-size: 1rem;
-    color: black;
+    font-size: 1.5rem;
+    color: lightblue;
     
     
 }

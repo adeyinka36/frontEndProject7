@@ -21,6 +21,7 @@ const bell= document.getElementsByClassName("profSvg")[0];
 
 
 
+// this function add a click event to each time period on the line chart and updates it with the appropriate data 
 for(let i=0;i<periods.length;i++){
     let theperiods= document.getElementsByClassName("periods");
     let currperr=theperiods[i];
@@ -47,10 +48,12 @@ for(let i=0;i<periods.length;i++){
 }
 
 
-
+// cancels the initial alert from the screen
 cancel.addEventListener('click',()=>{alert.style.display="none"
 
 })
+
+
 
 const weeklyLabels=["16-22","23-29","30-5","6-12","13-19","20-26","4-10","11-17","18-24","25-31"];
 const weeklyData=[500,750,800,750,700,1000,900,1000,1500,1400,1600,2000];
@@ -67,6 +70,8 @@ function renderPeriod(label,data){
     lineChart.data.datasets[0].data=data;
     lineChart.update()
 }
+
+// this function selects the daily time periosd on load and loads the saved data from local storage
 window.onload=()=>{
     daily.click();
     if(localStorage.getItem("emailNotification")==="off"){
@@ -75,7 +80,14 @@ window.onload=()=>{
     }
     if(localStorage.getItem("public")==="off"){
         togglePub.click();
-        console.log("jkl;m")
+    
+    }
+
+    
+    
+    if(localStorage.getItem("selected")){
+       console.log(localStorage.getItem("selected"));
+       document.getElementById("mySelect").value=localStorage.getItem("selected");
     }
 }
 
@@ -163,6 +175,8 @@ let roundChart=new Chart("myChartPie",{
 })
 
 
+
+// adding click event to each memeber so that when a member is clicked, thier deatils are displayed in the message box
 for(let i=0;i<mememail.length;i++){
     userSearch.value="";
     let curr= mememail[i];
@@ -170,6 +184,9 @@ for(let i=0;i<mememail.length;i++){
      userSearch.value= e.currentTarget.firstElementChild.nextElementSibling.firstElementChild.innerText;
     })
 }
+
+
+// adding on and off feautures to settings and public profile switch
 let value=0;
 let value2=0
 toggle[0].addEventListener("click",(e)=>{
@@ -205,27 +222,27 @@ toggle[0].addEventListener("click",(e)=>{
 
 
 
-
+// ensuring that messages cant be sent unless user and message sections are filled.
 userSearchButton.addEventListener("click",(e)=>{
 
     e.preventDefault();
-    if(!userSearch.value){
-        return window.alert("Please enter an user to message")
+    if(!userSearch.value||!document.getElementById("user-search-textarea").value){
+        return window.alert("User and message fields are required")
     }
     else{
         userSearch.value="";
-        window.alert("message sent")
+        window.alert("Message sent!")
     }
 })
 
-
+// adding auto complete dropdown to user search section
 userSearch.addEventListener("keyup",(e)=>{
     let divTo=document.getElementsByClassName("last-left")[0];
     let auto=[];
     let names=document.getElementsByClassName('personName');
     for(let i=0;i<names.length;i++){
      let cur= names[i].innerText.toLowerCase();
-     if(cur.includes(userSearch.value)){
+     if(cur.includes(userSearch.value.toLowerCase())){
          
          auto.push(names[i])
      }
@@ -266,6 +283,9 @@ userSearch.addEventListener("keyup",(e)=>{
 
 })
 
+
+
+// when anywhere on the page is clicked, the search result dropdown is romoved from the screen
 container.addEventListener("click",(e)=>{
 if(document.getElementById("house")){
     document.getElementById("house").remove();
@@ -273,21 +293,28 @@ if(document.getElementById("house")){
 }
 )
 
-
+// adding functionality to save button so that it saves the neccessary information to localstorage when it is clicked
 save.addEventListener("click",(e)=>{
     e.preventDefault();
     let emailNotification= sendEmail.innerText.toLowerCase();
     let public = proPub.innerText.toLowerCase();
+    let selected= document.getElementById("mySelect").value;
+    console.log(selected);
 
     localStorage.setItem("emailNotification",emailNotification);
     localStorage.setItem("public",public);
-
+    if(selected){
+        localStorage.setItem("selected",selected);
+    }
     
   
 })
 
+// cancel button clears the local storage
 cancelStorage.addEventListener("click",()=>{localStorage.clear()});
 
+
+// adding click event to bell icon to generate notification modal 
 bell.addEventListener("click",(e)=>{
     const dropdown=document.createElement("DIV");
     dropdown.className="dropdown";
@@ -313,6 +340,8 @@ bell.addEventListener("click",(e)=>{
     dropdown.appendChild(notificationsLi2);
     dropdown .appendChild(cancelModal);
 
+
+    // adding click event to cancel button in modal tom remove the modal
     cancelModal.addEventListener("click",()=>{
         dropdown.style.display="none";
     })
