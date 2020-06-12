@@ -1479,6 +1479,6 @@ z-index: 10;
 
 .cancelStyle:hover{
     cursor: pointer;
-    color: lightblue;
+    color: red;
 }
 
